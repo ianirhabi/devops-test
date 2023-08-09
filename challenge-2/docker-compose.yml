@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:latest
+    build:
+      dockerfile: my-answer.Dockerfile
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - 8080:80
+      - 443:443
+    volumes:
+      - /home/devops/devops/test/challenge-2:/etc/nginx/conf.d/
+      - /home/ubuntu/ssl:/ssl/
