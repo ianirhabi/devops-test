@@ -5,7 +5,7 @@ $ sudo chmod +x uninstall.sh
 $ sudo ./install.sh
 ```
 
-```console
 ## if You wanna delete the service execute this command
+```console
 $ ./uninstall.sh
 ```
